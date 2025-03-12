@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="initial-scale=1, width=device-width" name="viewport">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.5.13/vue.global.prod.min.js"></script>
+    <script src="dist/demo-components.umd.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <my-button :start="100"></my-button>
+    </div>
+    <script>
+        Vue.createApp({}).use(DemoComponents).mount("#app");
+    </script>
+</body>
+
+</html>
